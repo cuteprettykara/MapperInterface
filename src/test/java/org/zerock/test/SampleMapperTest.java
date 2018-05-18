@@ -29,5 +29,10 @@ public class SampleMapperTest {
 	public void testEmail() {
 		logger.debug("*** email : {}", mapper.getEmail("prettykara", "1111"));
 	}
+	
+	@Test
+	public void testUserName() {
+		logger.debug("*** user name : {}", mapper.getUserName("prettykara", "1111"));
+	}
 
 }

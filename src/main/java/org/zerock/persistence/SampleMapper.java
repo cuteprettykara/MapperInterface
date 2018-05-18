@@ -12,4 +12,8 @@ public interface SampleMapper {
 	public String getEmail(
 			@Param("id") String id, 
 			@Param("pw") String pw);
+	
+	public String getUserName(
+			@Param("id") String id, 
+			@Param("pw") String pw);
 }
