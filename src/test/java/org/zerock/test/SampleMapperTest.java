@@ -34,5 +34,15 @@ public class SampleMapperTest {
 	public void testUserName() {
 		logger.debug("*** user name : {}", mapper.getUserName("prettykara", "1111"));
 	}
-
+	
+	
+	@Test
+	public void testSelectProviderById() {
+		logger.debug("*** search by Id: {}", mapper.search("id", "prettykara"));
+	}
+	
+	@Test
+	public void testSelectProviderByEmail() {
+		logger.debug("*** search by Email: {}", mapper.search("email", "prettykara@gmail.com"));
+	}
 }
